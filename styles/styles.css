@@ -1,0 +1,106 @@
+/* ---------------------------------------------------|INFO|-------------------------------------------------- */
+
+/* Creadted By CYAN 1403/07/29 */
+
+/* ---------------------------------------------------|ROOT|-------------------------------------------------- */
+
+:root{
+    --main_color: #d49100;
+    --sub_color: #e66300;
+    --gray_color: #b2b6bd;
+    --light_color: #e0e1dd;
+    --white_color: #f9f7f3;
+    --black_color: ##0d0d0c;
+    --font_style: "Dirooz", sans-serif;
+    --radius: 0.5rem;
+    --transition: all 0.3s linear;
+}
+
+@font-face {
+    font-family: "Dirooz";
+    src: url(../fonts/dirooz.ttf) format("truetype"),
+    url(../fonts/dirooz.woff) format("woff"),
+    url(../fonts/dirooz.woff2) format("woff2");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -----------------------------------------------|RESPONSICE|------------------------------------------------ */
+
+@media screen and (min-width: 800px) 
+{
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* ---------------------------------------------------|BODY|-------------------------------------------------- */
+
+body{
+    font-family: var(--font_style);
+    background-color: var(--white_color);
+    font-size: 1rem;
+    text-align: right;
+    direction: rtl;
+}
+
+/* --------------------------------------------------|HEADER|------------------------------------------------- */
+
+.header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../images/images/Header_Image.jpg) center/cover no-repeat fixed;
+    position: relative;
+}
+
+.header_section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--white_color);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header_button{
+    background-color: var(--main_color);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius);
+    color: var(--white_color);
+    transition: var(--transition);
+}
+
+.header_button:hover{
+    background-color: var(--sub_color);
+    color: var(--white_color);
+    outline: 0.125rem solid var(--sub_color);
+    outline-offset: 0.25rem;
+}
+
+.header h1{
+    color: var(--main_color);
+    margin-bottom: 2rem;
+}
+
+.header h2{
+    color: var(--white_color);
+    margin-bottom: 3rem;
+}
+
+.header_divider{
+    width: 100%;
+    height: 0.5rem;
+    background: linear-gradient(to left, var(--sub_color), var(--main_color));
+    position: absolute;
+    bottom: 0;
+}
