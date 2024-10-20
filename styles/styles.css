@@ -7,8 +7,8 @@
 :root{
     --main_color: #d49100;
     --sub_color: #e66300;
-    --gray_color: #b2b6bd;
-    --light_color: #e0e1dd;
+    --gray_color: #525252;
+    --light_color: #edebe4;
     --white_color: #f9f7f3;
     --black_color: ##0d0d0c;
     --font_style: "Dirooz", sans-serif;
@@ -100,7 +100,69 @@ body{
 .header_divider{
     width: 100%;
     height: 0.5rem;
-    background: linear-gradient(to left, var(--sub_color), var(--main_color));
+    background: linear-gradient(to left,var(--main_color), var(--sub_color), var(--main_color));
     position: absolute;
     bottom: 0;
 }
+
+/* ------------------------------------------------|FEATURES|----------------------------------------------- */
+
+.feature{
+    background: var(--light_color);
+    display: flex;
+    width: 100%;
+
+}
+
+.feature_part1, .feature_part2, .feature_part3, .feature_part4 {
+    text-align: center;
+    height: 260px;
+    padding: 2.5rem 0;
+    transition: var(--transition);
+    width: 25%;
+}
+
+.feature_part1:hover, .feature_part2:hover, .feature_part3:hover, .feature_part4:hover {
+    background: var(--white_color);
+    box-shadow: 0 5px 0 var(--main_color);
+    transform: translateY(-2px);
+    border: solid 1px var(--main_color);
+}
+
+
+.feature_part1_icon, .feature_part2_icon, .feature_part3_icon, .feature_part4_icon {
+    font-size: 2rem;
+    color: var(--main_color);
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.feature_part1_title, .feature_part2_title, .feature_part3_title, .feature_part4_title {
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: medium;
+}
+
+.feature_part1_text, .feature_part2_text, .feature_part3_text, .feature_part4_text {
+    color: var(--gray_color);
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+
+/* @media screen and (min-width: 576px) {
+    .feature {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature {
+        float: right;
+        width: 20%;
+    }
+} */
