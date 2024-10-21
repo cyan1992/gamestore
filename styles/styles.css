@@ -33,11 +33,6 @@ a{
     text-decoration: none;
 }
 
-.clearfix::after, .clearfix::before {
-    content: "";
-    clear: both;
-    display: block;
-}
 /* -----------------------------------------------|RESPONSICE|------------------------------------------------ */
 
 @media screen and (min-width: 800px) 
@@ -114,6 +109,9 @@ body{
 
 .feature{
     background: var(--light_color);
+    display: flex;
+    width: 100%;
+
 }
 
 .feature_part1, .feature_part2, .feature_part3, .feature_part4 {
