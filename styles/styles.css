@@ -259,7 +259,7 @@ body{
 }
 
 .about_button {
-    /* margin-top: 1.5rem; */
+    margin-top: 1.5rem;
     background-color: var(--main_color);
 }
 
@@ -305,6 +305,10 @@ body{
 .products_list_price{
     color: var(--main_color);
     direction: rtl;
+}
+
+.product_title{
+    color: var(--sub_color) !important; 
 }
 
 @media screen and (min-width: 768px) {
