@@ -46,7 +46,7 @@ img {
 
 .btn {
     background: var(--clr-primary);
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
     border-radius: var(--radius);
     color: var(--clr-white);
     transition: var(--transition);
@@ -74,7 +74,7 @@ img {
     padding: 4rem 0;
     width: 85vw;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width:1200px;
 }
 
 /* -----------------------------------------------|RESPONSICE|------------------------------------------------ */
@@ -96,6 +96,14 @@ img {
     h4 {
         font-size: 1.25rem;
     }
+}
+
+.section-title h3 {
+    color: var(--clr-primary);
+}
+
+.section-title {
+    margin-bottom: 2rem;
 }
 
 /* ---------------------------------------------------|BODY|-------------------------------------------------- */
@@ -131,6 +139,7 @@ body{
     border-radius: var(--radius);
     color: var(--white_color);
     transition: var(--transition);
+    margin: 10px 0;
 }
 
 .header_button:hover{
@@ -250,7 +259,7 @@ body{
 }
 
 .about_button {
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     background-color: var(--main_color);
 }
 
@@ -263,5 +272,69 @@ body{
     .about_article2 {
         float: right;
         width: 50%;
+    }
+}
+
+/* -------------------------------------------------|PRODUCTS|------------------------------------------------ */
+
+.products {
+    background-color: var(--light_color);
+}
+
+.products article{
+    padding: 2rem 0;
+}
+
+.products_text{
+    color: var(--gray_color);
+    max-width: 22rem;
+    margin-left: auto ;
+}
+
+.products_btn{
+    margin-bottom: 2rem;
+}
+
+.products_list_image{
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.products_list_price{
+    color: var(--main_color);
+    direction: rtl;
+}
+
+@media screen and (min-width: 768px) {
+    .product {
+        float: right;
+        width: 50%;
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products_info {
+        float: right;
+        width: 30%;
+    }
+
+    .products_list {
+        float: left;
+        width: 70%;
+    }
+
+    .product {
+        padding-left: 0;
+        padding-right: 2rem;
+        margin-bottom: 0;
     }
 }
