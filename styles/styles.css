@@ -489,3 +489,34 @@ body{
         width: 50%;
     }
 }
+
+/* -------------------------------------------------|FOOTER|------------------------------------------------ */
+
+.footer {
+    background: #222;
+    text-align: center;
+    color: var(--white_color);
+}
+
+.social-icon {
+    color: var(--main_color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    color: var(--clr-primary);
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    direction: rtl;
+}
+
+.company {
+    color: var(--clr-primary);
+    font-size: 1.3rem;
+}
